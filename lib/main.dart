@@ -54,10 +54,10 @@ class PaginaInicio extends StatelessWidget {
             const AutoSizeText(
               'Bienvenido al viaje más importante de nuestra vida.\n',
               maxLines: 1,
-              minFontSize: 16,
+              minFontSize: 17,
               style: TextStyle(
                 fontFamily: 'Playfair',
-                fontSize: 32,
+                fontSize: 50,
                 fontWeight: FontWeight.bold,
               ),
             ),

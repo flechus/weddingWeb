@@ -93,7 +93,7 @@ class DressCodeHombre extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             const AutoSizeText(
-              'Traje ocuro',
+              'Traje oscuro',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.black,
@@ -144,7 +144,7 @@ class DressCodeMujer extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             const AutoSizeText(
-              'Vestido corto o traje',
+              'Vestido corto / Midi\nTraje',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.black,

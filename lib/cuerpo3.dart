@@ -98,7 +98,7 @@ class Cuerpo3Informacion extends StatelessWidget {
                   fontFamily: 'Playfair',
                 ),
                 maxLines: 15,
-                minFontSize: 16,
+                minFontSize: 13,
               ),
             ),
           ),

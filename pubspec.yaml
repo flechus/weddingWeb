@@ -84,6 +84,7 @@ flutter:
      - svg/dresCode/man.svg
      - svg/dresCode/woman.svg
      - svg/informacion/mail.svg
+     - svg/background.svg
    
 
   # An image asset can refer to one or more resolution-specific "variants", see
