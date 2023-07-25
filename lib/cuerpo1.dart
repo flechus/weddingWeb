@@ -57,24 +57,31 @@ class Cuerpo1Informacion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.grey[200],
-      child: const Row(
-        children: [
-          Expanded(
-            flex: 4,
-            child: Fecha(),
-          ),
-          Expanded(
-            flex: 4,
-            child: Lugar(),
-          ),
-          Expanded(
-            flex: 4,
-            child: Fiesta(),
-          ),
-        ],
-      ),
+    return Stack(
+      children: [
+        SvgPicture.asset(
+          'svg/wordPart/iceland.svg', // Ruta de tu SVG
+          fit: BoxFit.cover,
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+        ),
+        const Row(
+          children: [
+            Expanded(
+              flex: 4,
+              child: Fecha(),
+            ),
+            Expanded(
+              flex: 4,
+              child: Lugar(),
+            ),
+            Expanded(
+              flex: 4,
+              child: Fiesta(),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
@@ -85,7 +92,8 @@ class Fecha extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
+      color: Colors
+          .transparent, // Hacemos el fondo transparente para dejar ver el SVG,
       padding: const EdgeInsets.all(16),
       child: Center(
         child: ListView(
@@ -136,7 +144,8 @@ class Lugar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
+      color: Colors
+          .transparent, // Hacemos el fondo transparente para dejar ver el SVG,
       padding: const EdgeInsets.all(16),
       child: Center(
         child: ListView(
@@ -202,7 +211,8 @@ class Fiesta extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
+      color: Colors
+          .transparent, // Hacemos el fondo transparente para dejar ver el SVG,
       padding: const EdgeInsets.all(16),
       child: Center(
         child: ListView(

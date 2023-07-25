@@ -56,24 +56,31 @@ class Cuerpo2Informacion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.grey[200],
-      child: const Row(
-        children: [
-          Expanded(
-            flex: 4,
-            child: SalidaCastro(),
-          ),
-          Expanded(
-            flex: 4,
-            child: SalidaBilbao(),
-          ),
-          Expanded(
-            flex: 4,
-            child: Vuelta(),
-          ),
-        ],
-      ),
+    return Stack(
+      children: [
+        SvgPicture.asset(
+          'svg/wordPart/uk.svg', // Ruta de tu archivo SVG
+          fit: BoxFit.cover,
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+        ),
+        const Row(
+          children: [
+            Expanded(
+              flex: 4,
+              child: SalidaCastro(),
+            ),
+            Expanded(
+              flex: 4,
+              child: SalidaBilbao(),
+            ),
+            Expanded(
+              flex: 4,
+              child: Vuelta(),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
@@ -84,7 +91,7 @@ class SalidaCastro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
+      color: Colors.transparent,
       padding: const EdgeInsets.all(16),
       child: Center(
         child: ListView(
@@ -135,7 +142,7 @@ class SalidaBilbao extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
+      color: Colors.transparent,
       padding: const EdgeInsets.all(16),
       child: Center(
         child: ListView(
@@ -186,7 +193,7 @@ class Vuelta extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
+      color: Colors.transparent,
       padding: const EdgeInsets.all(16),
       child: Center(
         child: ListView(

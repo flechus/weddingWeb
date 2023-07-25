@@ -56,20 +56,27 @@ class Cuerpo4Informacion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.grey[200],
-      child: const Row(
-        children: [
-          Expanded(
-            flex: 4,
-            child: DressCodeHombre(),
-          ),
-          Expanded(
-            flex: 4,
-            child: DressCodeMujer(),
-          ),
-        ],
-      ),
+    return Stack(
+      children: [
+        SvgPicture.asset(
+          'svg/wordPart/europeNorth.svg', // Ruta de tu archivo SVG
+          fit: BoxFit.cover,
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+        ),
+        const Row(
+          children: [
+            Expanded(
+              flex: 4,
+              child: DressCodeHombre(),
+            ),
+            Expanded(
+              flex: 4,
+              child: DressCodeMujer(),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
@@ -80,7 +87,8 @@ class DressCodeHombre extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
+      color: Colors
+          .transparent, // Hacemos el fondo transparente para dejar ver el SVG,
       padding: const EdgeInsets.all(16),
       child: Center(
         child: ListView(
@@ -131,7 +139,8 @@ class DressCodeMujer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
+      color: Colors
+          .transparent, // Hacemos el fondo transparente para dejar ver el SVG,
       padding: const EdgeInsets.all(16),
       child: Center(
         child: ListView(
