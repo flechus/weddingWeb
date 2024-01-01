@@ -22,7 +22,7 @@ class Cuerpo4Titulo extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             AutoSizeText(
-              'Cuarta parada:',
+              'Quinta parada:',
               style: TextStyle(
                 fontSize: sizeSecondTitle,
                 color: Colors.black,
@@ -59,7 +59,7 @@ class Cuerpo4Informacion extends StatelessWidget {
     return Stack(
       children: [
         SvgPicture.asset(
-          'svg/wordPart/europeNorth.svg', // Ruta de tu archivo SVG
+          'svg/wordPart/italy.svg', // Ruta de tu archivo SVG
           fit: BoxFit.cover,
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
@@ -160,7 +160,7 @@ class DressCodeMujer extends StatelessWidget {
                 fontFamily: 'Playfair',
                 fontWeight: FontWeight.bold,
               ),
-              maxLines: 1,
+              maxLines: 2,
               minFontSize: 10,
               overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.center,

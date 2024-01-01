@@ -108,6 +108,7 @@ class PaginaPrincipal extends StatelessWidget {
             children: const [
               CuentaAtras(),
               Cuerpo3(),
+              Cuerpo6(),
               Cuerpo1(),
               Cuerpo2(),
               Cuerpo4(),

@@ -22,7 +22,7 @@ class Cuerpo2Titulo extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             AutoSizeText(
-              'Tercera parada:',
+              'Cuarta parada:',
               style: TextStyle(
                 fontSize: sizeSecondTitle,
                 color: Colors.black,

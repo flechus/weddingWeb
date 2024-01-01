@@ -76,6 +76,7 @@ flutter:
      - images/head2.jpg
      - images/aboutUs.jpg
      - images/aboutUs2.jpg
+     - images/aske.jpg
      - svg/timeLine/calendarLove.svg
      - svg/timeLine/party.svg
      - svg/timeLine/place.svg
@@ -89,6 +90,7 @@ flutter:
      - svg/wordPart/italy.svg
      - svg/wordPart/uk.svg
      - svg/wordPart/europeNorth.svg
+     - svg/wordPart/france.svg
    
 
   # An image asset can refer to one or more resolution-specific "variants", see

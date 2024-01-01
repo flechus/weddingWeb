@@ -23,7 +23,7 @@ class Cuerpo1Titulo extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             AutoSizeText(
-              'Segunda parada:',
+              'Tercera parada:',
               style: TextStyle(
                 fontSize: sizeSecondTitle,
                 color: Colors.black,
@@ -225,7 +225,7 @@ class Fiesta extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             const AutoSizeText(
-              'Preboda',
+              'Txoko Eguzkilore',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.black,
@@ -238,17 +238,32 @@ class Fiesta extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 8),
-            const AutoSizeText(
-              'El viernes anterior\npintxopote por el casco.',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.black,
-                fontFamily: 'Playfair',
-              ),
-              maxLines: 2,
-              minFontSize: 10,
-              overflow: TextOverflow.ellipsis,
+            RichText(
               textAlign: TextAlign.center,
+              text: TextSpan(
+                style: const TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                  fontFamily: 'Playfair',
+                ),
+                children: [
+                  const TextSpan(
+                    text: 'C/ Sagarminaga 6 planta baja, Bilbao, Bizkaia\n',
+                  ),
+                  TextSpan(
+                    text: 'txokoeguzkilore.com',
+                    style: const TextStyle(
+                      decoration: TextDecoration.underline,
+                      color: Colors.blue,
+                    ),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        // Acción cuando se hace clic en el hipervínculo
+                        ('https://txokoeguzkilore.com/');
+                      },
+                  ),
+                ],
+              ),
             ),
           ],
         ),

@@ -55,7 +55,7 @@ class Cuerpo3Informacion extends StatelessWidget {
   const Cuerpo3Informacion({Key? key}) : super(key: key);
 
   final String textoLargo =
-      '¡Hola a todos! Si estas leyendo esto, es que queremos que compartas con nosotros el día mas importante de nuestra vida. Después de 7 años, 10 meses y 6 dias, nos hemos decidido a dar el si quiero.Desde aquella noche de Halloween, no hemos parado de explorar el mundo juntos, creando recuerdos inolvidables en lugares como Islandia, Laponia, Italia, Escocia, Oporto y Paris ¡Y queremos que vosotros forméis una parte de esta nueva aventura!';
+      '¡Hola a todos! Si estas leyendo esto, es que queremos que compartas con nosotros el día mas importante de nuestra vida. Después de 7 años, 10 meses y 6 dias, nos hemos decidido a dar el si quiero.Desde aquella noche de Halloween, no hemos parado de explorar el mundo juntos, creando recuerdos inolvidables en lugares como Islandia, Italia, Escocia, Oporto y Paris ¡Y queremos que vosotros forméis una parte de esta nueva aventura!';
 
   @override
   Widget build(BuildContext context) {
@@ -64,13 +64,6 @@ class Cuerpo3Informacion extends StatelessWidget {
       child: Stack(
         // Utilizamos un Stack para superponer el SVG y el contenido
         children: [
-          Positioned.fill(
-            // Esto asegurará que el SVG ocupe todo el espacio disponible
-            child: SvgPicture.asset(
-              'svg/wordPart/italy.svg',
-              fit: BoxFit.cover,
-            ),
-          ),
           Row(
             children: [
               Expanded(

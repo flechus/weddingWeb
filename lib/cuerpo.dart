@@ -7,6 +7,7 @@ import 'cuerpo2.dart';
 import 'cuerpo3.dart';
 import 'cuerpo4.dart';
 import 'cuerpo5.dart';
+import 'cuerpo6.dart';
 
 const int titleFlex = 1;
 const int informatioFlex = titleFlex * 5;
@@ -260,6 +261,34 @@ class Cuerpo5 extends StatelessWidget {
           Expanded(
             flex: informatioFlex,
             child: Center(child: Cuerpo5Informacion()),
+          ),
+          SizedBox(height: 16),
+        ],
+      ),
+    );
+  }
+}
+
+class Cuerpo6 extends StatelessWidget {
+  const Cuerpo6({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.white,
+      height: MediaQuery.of(context).size.height,
+      padding: const EdgeInsets.only(top: 16),
+      child: const Column(
+        children: [
+          SizedBox(height: 16),
+          Expanded(
+            flex: titleFlex,
+            child: Center(child: Cuerpo6Titulo()),
+          ),
+          SizedBox(height: 16),
+          Expanded(
+            flex: informatioFlex,
+            child: Center(child: Cuerpo6Informacion()),
           ),
           SizedBox(height: 16),
         ],
